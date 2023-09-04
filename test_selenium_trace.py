@@ -1,11 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
 
 def test_trace():
-    service = Service()
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome()
 
     driver.maximize_window()
 
